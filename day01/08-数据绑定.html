@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular.js"></script>
+    <style>
+        [ng-cloak]{
+            display: none;
+        }
+    </style>
+
+      <script>
+                   //1.创建模块
+                   var app = angular.module('app',[]);
+                   //2.创建控制器
+                   app.controller('Xmgcontroller',['$scope',function ($scope) {
+                       $scope.name = "zs";
+                       $scope.age = 18;
+
+
+                   }])
+
+           </script>
+</head>
+<body ng-app ="app" ng-controller ="Xmgcontroller">
+ <span ng-cloak>{{name}}--{{age}}</span>
+
+
+</body>
+</html>

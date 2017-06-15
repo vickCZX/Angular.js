@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular.js"></script>
+     <script>
+                  //1.创建模块
+                  var app = angular.module('app',[]);
+                  //2.创建控制器
+                  app.controller('Xmgcontroller',['$scope',function ($scope) {
+                      $scope.msg ="xxxx"
+
+
+                  }])
+
+          </script>
+
+
+
+</head>
+<body ng-app="app" ng-controller="Xmgcontroller">
+<input type="text" ng-model="msg">
+<p>{{msg}}</p>
+</body>
+</html>

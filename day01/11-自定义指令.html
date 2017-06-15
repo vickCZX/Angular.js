@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular.js"></script>
+     <script>
+                  //1.创建模块
+                  var app = angular.module('app',[]);
+                  //2.创建控制器
+                  app.controller('Xmgcontroller',['$scope',function ($scope) {
+
+                  }]);
+                  app.directive('xmg',function(){
+
+                      return{
+
+                          restirt:'EA',
+
+                          template:'<div><span>hahah</span></div>'
+
+
+                           replace:""
+
+                      }
+
+
+                  })
+
+          </script>
+</head>
+
+<body>
+ <div xmg></div>
+</body>
+</html>
